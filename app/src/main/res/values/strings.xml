@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">FUTWR</string>
+
+    <string-array name="competiciones">
+        <item>Todas las competiciones</item>
+        <item>LaLiga</item>
+        <item>Champions League</item>
+        <item>Premier League</item>
+        <item>Europa League</item>
+    </string-array>
+
+    <string-array name="equipos">
+        <item>Todos los equipos</item>
+        <item>FC Barcelona</item>
+        <item>Real Madrid</item>
+        <item>Atlético de Madrid</item>
+        <item>Manchester City</item>
+        <item>Liverpool</item>
+    </string-array>
+
+    <string-array name="tipos_noticia">
+        <item>Todos los tipos</item>
+        <item>Noticias</item>
+        <item>Resultados</item>
+        <item>Fichajes</item>
+    </string-array>
 </resources>

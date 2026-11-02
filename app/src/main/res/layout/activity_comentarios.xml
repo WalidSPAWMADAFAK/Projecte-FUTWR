@@ -12,7 +12,6 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="55dp"
@@ -107,16 +106,14 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="24dp" />
 
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Comentarios de la comunidad"
+            android:text="Comentarios"
             android:textColor="#222222"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginBottom="14dp" />
-
 
         <LinearLayout
             android:layout_width="match_parent"
