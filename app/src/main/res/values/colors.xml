@@ -1,19 +1,13 @@
-
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <!-- Mode clar -->
     <color name="blau_marca">#FFFF8000</color>
     <color name="blau_secundari">#FFBDBDBD</color>
     <color name="fons_clar">#FFE0E0E0</color>
     <color name="superficie_clara">#FFF5F5F5</color>
     <color name="text_sobre_superficie_clar">#FF333333</color>
-
-    <!-- Mode fosc -->
     <color name="blau_marca_fosc">#FFFF8000</color>
     <color name="blau_secundari_fosc">#FF9E9E9E</color>
     <color name="fons_fosc">#FF303030</color>
     <color name="superficie_fosca">#FF424242</color>
     <color name="text_sobre_superficie_fosc">#FFFFFFFF</color>
-
 </resources>
