@@ -12,17 +12,32 @@
         android:gravity="center_horizontal"
         android:padding="24dp">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="FUTWR"
-            android:textColor="#FF8000"
-            android:textSize="36sp"
-            android:textStyle="bold"
-            android:layout_marginTop="24dp"
-            android:layout_marginBottom="8dp" />
+            <ImageButton
+                android:id="@+id/btnVolverRegistro"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Volver"
+                android:src="@android:drawable/ic_menu_revert" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="FUTWR"
+                android:textColor="#FF8000"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
 
         <TextView
             android:layout_width="wrap_content"
@@ -94,8 +109,6 @@
                 android:padding="12dp"
                 android:backgroundTint="#FF8000"
                 android:layout_marginBottom="16dp" />
-
-
 
             <Button
                 android:id="@+id/btnRegistrar"
