@@ -6,7 +6,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
-import android.widget.TextView
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -53,16 +53,16 @@ class MainActivity : AppCompatActivity() {
 
         val btnBuscar = findViewById<ImageButton>(R.id.btnBuscar)
         val etBuscar = findViewById<EditText>(R.id.etBuscar)
-        val tvLogo = findViewById<TextView>(R.id.tvLogo)
+        val ivLogo = findViewById<ImageView>(R.id.ivLogo)
 
         btnBuscar.setOnClickListener {
             if (etBuscar.visibility == View.GONE) {
                 etBuscar.visibility = View.VISIBLE
-                tvLogo.visibility = View.GONE
+                ivLogo.visibility = View.GONE
                 etBuscar.requestFocus()
             } else {
                 etBuscar.visibility = View.GONE
-                tvLogo.visibility = View.VISIBLE
+                ivLogo.visibility = View.VISIBLE
                 etBuscar.setText("")
             }
         }

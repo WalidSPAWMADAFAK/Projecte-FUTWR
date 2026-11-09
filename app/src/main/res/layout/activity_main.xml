@@ -9,7 +9,7 @@
     android:padding="8dp">
 
     <LinearLayout
-         android:layout_width="match_parent"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginBottom="8dp"
         android:background="#FFFFFF"
@@ -17,8 +17,9 @@
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:paddingHorizontal="12dp">
+
         <ImageButton
-             android:id="@+id/btnBuscar"
+            android:id="@+id/btnBuscar"
             android:layout_width="36dp"
             android:layout_height="36dp"
             android:background="?attr/selectableItemBackgroundBorderless"
@@ -26,10 +27,11 @@
             android:scaleType="fitCenter"
             android:src="@android:drawable/ic_menu_search"
             app:tint="#FF8000" />
-         <EditText
+
+        <EditText
             android:id="@+id/etBuscar"
             android:layout_width="0dp"
-              android:layout_height="40dp"
+            android:layout_height="40dp"
             android:layout_weight="1"
             android:layout_marginHorizontal="8dp"
             android:hint="Buscar..."
@@ -38,16 +40,14 @@
             android:paddingHorizontal="8dp"
             android:background="@android:drawable/editbox_background_normal" />
 
-        <TextView
-            android:id="@+id/tvLogo"
+        <ImageView
+            android:id="@+id/ivLogo"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_weight="1"
-            android:gravity="center"
-            android:text="FUTWR"
-            android:textColor="#FF8000"
-            android:textSize="22sp"
-            android:textStyle="bold" />
+            android:scaleType="centerInside"
+            android:src="@drawable/logo"
+            android:contentDescription="Logotipo FUTWR" />
 
         <ImageButton
             android:id="@+id/btnLogin"
