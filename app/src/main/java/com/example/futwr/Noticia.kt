@@ -1,8 +1,8 @@
 package com.example.futwr
 
 class Noticia(
-    val titulo: String,
-    val cuerpo: String,
+    var titulo: String,
+    var cuerpo: String,
     val comentarios: String,
     val imagenResId: Int
 )
