@@ -64,7 +64,6 @@ class NoticiaAdapter(
         return listaNoticias.size
     }
 
-    // Método para Añadir (Aparece arriba en la lista)
     fun agregarNoticia(noticia: Noticia) {
         listaNoticias.add(0, noticia)
         notifyItemInserted(0)

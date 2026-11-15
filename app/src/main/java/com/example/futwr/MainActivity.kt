@@ -8,6 +8,7 @@ import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.PopupMenu
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -86,9 +87,40 @@ class MainActivity : AppCompatActivity() {
         }
 
         val btnFiltros = findViewById<ImageButton>(R.id.btnFiltros)
-        btnFiltros?.setOnClickListener {
-            val intent = Intent(this, FiltrosActivity::class.java)
-            startActivity(intent)
+        btnFiltros?.setOnClickListener { view ->
+            val popup = PopupMenu(this, view)
+            popup.menu.add(0, 1, 0, "Filtros de Noticias")
+            popup.menu.add(0, 2, 1, "Mis Comentarios") // <--- Nueva opción solicitada
+            popup.menu.add(0, 3, 2, "Iniciar Sesión / Registro")
+            popup.menu.add(0, 4, 3, "Preferencias")
+            popup.menu.add(0, 5, 4, "Tutorial / Ayuda")
+
+            popup.setOnMenuItemClickListener { item ->
+                when (item.itemId) {
+                    1 -> {
+                        startActivity(Intent(this, FiltrosActivity::class.java))
+                        true
+                    }
+                    2 -> {
+                        startActivity(Intent(this, MisComentariosActivity::class.java))
+                        true
+                    }
+                    3 -> {
+                        startActivity(Intent(this, LoginActivity::class.java))
+                        true
+                    }
+                    4 -> {
+                        startActivity(Intent(this, PreferenciasActivity::class.java))
+                        true
+                    }
+                    5 -> {
+                        startActivity(Intent(this, TutorialActivity::class.java))
+                        true
+                    }
+                    else -> false
+                }
+            }
+            popup.show()
         }
     }
 }

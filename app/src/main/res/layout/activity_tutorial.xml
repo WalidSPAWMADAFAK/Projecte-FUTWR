@@ -11,15 +11,15 @@
         android:orientation="vertical"
         android:padding="20dp">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="12dp"
-            android:text="FUTWR"
-            android:textColor="#FF8000"
-            android:textSize="32sp"
-            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/ivLogoTutorial"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="Logotipo oficial de la aplicación FUTWR"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo" />
 
         <View
             android:layout_width="match_parent"
@@ -82,7 +82,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#FF8000"
-            android:text="Siguiente "
+            android:text="Siguiente"
             android:textColor="#FFFFFF"
             android:textSize="16sp" />
 

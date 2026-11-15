@@ -44,7 +44,7 @@
             android:name=".ComentariosActivity"
             android:exported="false" />
         <activity
-            android:name=".MisComentarios"
+            android:name=".MisComentariosActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
     </application>
