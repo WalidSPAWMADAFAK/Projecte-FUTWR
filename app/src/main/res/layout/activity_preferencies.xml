@@ -198,7 +198,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="4dp"
-                    android:text="¿Cuál es tu selección de fútbol favorita?"
+                    android:text="@string/cu_l_es_tu_selecci_n_de_f_tbol_favorita"
                     android:textColor="#555555"
                     android:textSize="14sp"
                     android:textStyle="bold" />

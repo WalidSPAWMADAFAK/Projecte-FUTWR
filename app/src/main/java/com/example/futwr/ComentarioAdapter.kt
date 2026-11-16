@@ -38,7 +38,6 @@ class ComentarioAdapter(
         holder.tvTexto.text = comentario.texto
         holder.tvFecha.text = comentario.fecha
 
-        // Evento de clic largo para modificar o eliminar tu comentario (cumple con la rúbrica)
         holder.itemView.setOnLongClickListener {
             val context = holder.itemView.context
             val opciones = arrayOf("Modificar comentario", "Eliminar comentario")
