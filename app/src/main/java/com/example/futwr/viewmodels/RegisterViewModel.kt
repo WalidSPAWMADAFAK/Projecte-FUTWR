@@ -44,6 +44,7 @@ class RegisterViewModel : ViewModel() {
             return
         }
 
+
         _errorMessage.value = null
         _registerResult.value = true
     }
