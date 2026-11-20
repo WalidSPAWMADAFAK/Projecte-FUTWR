@@ -13,8 +13,8 @@ class RegisterViewModel : ViewModel() {
     private val _errorMessage = MutableLiveData<String?>()
     val errorMessage: LiveData<String?> get() = _errorMessage
 
-    fun validarRegistro(usuario: String, email: String, password: String, confirmPassword: String) {
-        if (usuario.isBlank() || email.isBlank() || password.isBlank() || confirmPassword.isBlank()) {
+    fun validarRegistro(usuario: String, email: String, password: String) {
+        if (usuario.isBlank() || email.isBlank() || password.isBlank()) {
             _errorMessage.value = "Todos los campos son obligatorios."
             _registerResult.value = false
             return
@@ -37,13 +37,6 @@ class RegisterViewModel : ViewModel() {
             _registerResult.value = false
             return
         }
-
-        if (password != confirmPassword) {
-            _errorMessage.value = "Las contraseñas no coinciden."
-            _registerResult.value = false
-            return
-        }
-
 
         _errorMessage.value = null
         _registerResult.value = true
