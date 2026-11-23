@@ -31,3 +31,5 @@ Les Activities (LoginActivity i RegisterActivity) s'encarreguen només de la int
 Els ViewModels (LoginViewModel i RegisterViewModel) contenen tota la lògica de validació (camps buits, format del correu i longitud de les dades) i exposen dos LiveData: errorMessage (per avisar si hi ha algun error) i loginResult / registerResult (per indicar si la validació ha anat bé).
 
 D'aquesta manera la lògica queda separada de la vista i la pantalla reacciona automàticament quan l'usuari intenta iniciar sessió o registrar-se amb dades incorrectes o vàlides.
+
+Accesibilitat:Apart de canvis pendents i millores en aquesta activitat concreta no s'ha treballat l'accesibilitat degut a que no es demana.
