@@ -90,7 +90,7 @@ class MainActivity : AppCompatActivity() {
         btnFiltros?.setOnClickListener { view ->
             val popup = PopupMenu(this, view)
             popup.menu.add(0, 1, 0, "Filtros de Noticias")
-            popup.menu.add(0, 2, 1, "Mis Comentarios") // <--- Nueva opción solicitada
+            popup.menu.add(0, 2, 1, "Mis Comentarios")
             popup.menu.add(0, 3, 2, "Iniciar Sesión / Registro")
             popup.menu.add(0, 4, 3, "Preferencias")
             popup.menu.add(0, 5, 4, "Tutorial / Ayuda")

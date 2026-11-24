@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_category_button"
+        android:title="Categories"
+        app:showAsAction="ifRoom">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/cat_totes"
+                    android:title="Totes les notícies"
+                    android:checked="true" />
+                <item
+                    android:id="@+id/cat_partits"
+                    android:title="Partits" />
+                <item
+                    android:id="@+id/cat_jugadors"
+                    android:title="Jugadors / Premis" />
+                <item
+                    android:id="@+id/cat_fitxatges"
+                    android:title="Fitxatges" />
+            </group>
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/menu_mis_comentarios"
+        android:title="Mis Comentarios" />
+
+    <item
+        android:id="@+id/menu_login"
+        android:title="Iniciar Sesión / Registro" />
+
+    <item
+        android:id="@+id/menu_preferencias"
+        android:title="Preferencias" />
+
+    <item
+        android:id="@+id/menu_ayuda"
+        android:title="Tutorial / Ayuda" />
+
+</menu>
